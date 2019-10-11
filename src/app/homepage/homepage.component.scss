@@ -1,0 +1,116 @@
+.r-circle {
+  width: 47px;
+  height: 47px;
+  border: 2px solid black;
+}
+
+.full-width-image {
+  height: 415px;
+  background: url("../../assets/img/warstwa.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+}
+
+.btn-sup {
+  padding: 10px 50px;
+  font-size: 24px;
+  background: #d49200;
+  border-radius: 0;
+}
+
+.btn-sup:hover {
+  background-color: #bb8000;
+}
+
+.p-title {
+  position: absolute;
+  z-index: 99;
+  margin-top: 210px;
+}
+
+.p-discount {
+  position: absolute;
+  right: 0;
+}
+
+.flexible-container a {
+  font-size: 36px;
+}
+
+
+@media (max-width: 992px) {
+  .flexible-container a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    justify-content: center;
+  }
+  .p-title {
+    width: 350px;
+    margin-top: 50px;
+
+    h1 {
+      letter-spacing: 2px;
+      line-height: 1.5;
+      font-size: 30px;
+    }
+
+    button {
+      margin-top: 100px;
+    }
+  }
+
+  .p-discount {
+    margin-top: 250px;
+
+    .img-d {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .flexible-container {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    span {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    a {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .flexible-container {
+    img {
+      display: none;
+    }
+
+    a {
+      font-size: 1.3em;
+    }
+  }
+  .p-discount {
+    display: none;
+  }
+  .p-title {
+    width: 280px;
+
+    button {
+      margin-top: 50px;
+    }
+  }
+}
